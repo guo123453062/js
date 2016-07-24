@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{width: 300px;height: 300px;background: -webkit-linear-gradient(red,green,yellow,black,blue);border-radius: 50%}
+    </style>
+    <script>
+        window.onload=function(){
+          var oDiv=document.querySelector('div');
+            oDiv.onclick=function(){
+                var d=0;
+                setInterval(function(){
+                    oDiv.style.background='-webkit-linear-gradient('+(d+=100)+'deg,yellow,green,red,black,blue)';
+                },30)
+            }
+        };
+    </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

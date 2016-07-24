@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        @keyframes test {
+            from{left: 0;}
+            to{left: 113px;}
+        }
+        div{width: 300px;height: 300px;position: absolute;top: 0;left: 0;background:red;
+            -webkit-animation-name:test;
+            -webkit-animation-duration:1s;
+            -webkit-animation-timing-function:linear;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate;
+            -webkit-animation-delay:1s;
+            -webkit-animation-play-state:paused;
+        }
+        div:hover{-webkit-animation-play-state: running;}
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

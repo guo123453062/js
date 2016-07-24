@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 113px;height: 300px;border: 1px solid #000;overflow: hidden;position: absolute;}
+        .box div{height: 400px;width:400px;position: absolute;top: 0;left: 0;background: -webkit-repeating-linear-gradient(-45deg,red 0px, red 10px,#fff 10px, #fff 20px, blue 20px, blue 30px, #fff 30px ,#fff 40px);}
+    </style>
+    <script>
+        window.onload=function(){
+            var oDiv=document.querySelector('.box div');
+            var l=0;
+            setInterval(function(){
+                l-=2;
+                oDiv.style.left=l%113+'px';
+            },30)
+        };
+    </script>
+</head>
+<body>
+<div class="box">
+    <div></div>
+</div>
+</body>
+</html>
